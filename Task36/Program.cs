@@ -8,9 +8,10 @@ Console.WriteLine(SumOddPozition(myArray));
 int[] CreateRandomArray(int size)
 {
     int[] array = new int[size];
+    Random rand = new Random();
     for(int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(-100, 101);
+        array[i] = rand.Next(-100, 101);
     }
     return array;
 }
